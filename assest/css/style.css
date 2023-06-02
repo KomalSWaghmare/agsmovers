@@ -1,7 +1,7 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 body
 {
@@ -33,8 +33,6 @@ header .tophead ul li a
   font-size: 12px;
 }
 header .tophead .leftgroup ul li a.active{
-  /* width: auto; */
-  /* height:auto; */
   color: #b00000;
   font-weight: 700;
   line-height: 28px;
@@ -42,7 +40,6 @@ header .tophead .leftgroup ul li a.active{
   position: relative;
   background: #fff;
   display: inline-block;
-  /* text-decoration: none; */
 }
 header .tophead .leftgroup ul li a.active:hover{
   color: #b00000;
@@ -86,7 +83,6 @@ header .tophead .rightgroup
 .rightgroup ul li
 {
   display: block;
-  /* padding-top: 3px; */
 }
 .rightgroup ul li ul
 {
@@ -94,7 +90,6 @@ header .tophead .rightgroup
   position: absolute;
   z-index: 10;
 }
-
 .rightgroup ul li:hover ul
 {
   display: block;
@@ -145,6 +140,7 @@ header .tophead .rightgroup
 .navbar .navbar-collapse ul li
 {
   display: block;
+  position: relative;
 }
 .navbar .navbar-collapse ul li ul
 {
@@ -152,9 +148,12 @@ header .tophead .rightgroup
   display: none;
   position: absolute;
   z-index: 10;
-  top: 96px;
+  top: 50px;
   width: 209px;
-  /* padding: 1px; */
+}
+.navbar .navbar-collapse ul li ul li.menu-item:hover
+{
+  background-color: #1f1e23;
 }
 .navbar .navbar-collapse ul li:hover ul
 {
@@ -165,6 +164,87 @@ header .tophead .rightgroup
   color: #fff;
 }
 /*--navbar end---*/
+/*--Mega menu Section Start---*/
+/* .navbar .navbar-collapse .nav-item a .mega-menu
+{
+  display: block;
+} */
+.mega-menu
+{
+  display: none;
+}
+.mega-menu .dropdown-close
+{
+  float: right;
+  position: fixed;
+  right: 20px;
+  top: 160px;
+}
+.mega-menu .dropdown-close .cross 
+{
+  background: none;
+  border: none;
+  font-size: 26px;
+  background: #fff;
+  width: 25px;
+  height: 25px;
+}
+.mega-menu .dropdown-close .cross i
+{
+  font-size: 26px;
+  background: #fff;
+}
+.nav-item:hover .mega-menu
+{
+  background: #34313a;
+  display: block;
+  margin-top: 30px;
+  position: absolute;
+  left: -444px;
+  right: 0;
+  width: 1261px;
+  height: 700px;
+}
+.mega-menu .choose-us h5
+{
+  font-size: 15px;
+  border-width: 300px;
+}
+.mega-menu .choose-us
+{
+  padding-left: 0px;
+  padding-right: 80px;
+}
+#mega-menu2 .choose-us
+{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.mega-menu .choose-us a
+{
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+.mega-menu .choose-us .abc:hover
+{
+  transform: scale(1.1);
+  transition: 0.3s all;
+  font-weight: bold;
+  touch-action: manipulation;
+}
+.nav-item:hover #mega-menu2
+{
+  background: #34313a;
+  display: block;
+  margin-top: 30px;
+  position: absolute;
+  left: -584px;
+  right: 0;
+  width: 1263px;
+  height: 700px;
+}
+/*--Mega menu Section End----*/
 /*--slider start---*/
 .carousel-inner .carousel-item
 {
@@ -199,32 +279,6 @@ header .tophead .rightgroup
 {
   bottom: 1rem;
 }
-/* .slider
-{
-  height: 300px;
-  width: 300px;
-  display: inline-block;
-  border: 2px solid #b00000;
-} */
-/* .ags-slider{
-  border: 3px solid #fff;
-  padding: 0px;
-}
-.float-child1 
-{
-  width: 50%;
-  float: left;
-  padding: 70px;
-  border: 2px solid red;
-  height: 300px;
-}  
-.float-child2 {
-  width: 49%;
-  float: right;
-  padding: 70px;
-  border: 2px solid red;
-  height: 300px;
-}   */
 /*--slider end---*/
 /*--International Removal Section Start---*/
 .Internationalbox
@@ -238,12 +292,10 @@ header .tophead .rightgroup
 {
   font-size: 18px;
   color: #131212;
-  /* font-family: inherit; */
 }
 .Internationalbox a
 {
   color: #b00000;
-  /* text-decoration: none; */
 }
 .Internationalbox h3::before
 {
@@ -382,7 +434,6 @@ header .tophead .rightgroup
 .child:hover
 {
   background-color: #b00000;
-  /* color:#fff; */
 }
 .see .child a:hover
 {
@@ -415,7 +466,6 @@ header .tophead .rightgroup
   background-color: #9a0101;
 }
 /*--Corporation Section Start---*/
-
 /*--Domestic Section Start---*/
 .domestic
 {
@@ -423,21 +473,9 @@ header .tophead .rightgroup
 }
 .domestic img:hover
 {
-  transition: scale(1.1);
+  transition: 0.3s ease-out all;
+  transform: scale(1.1);
 }
-/* .solutionbox
-{
-  width: 19%;
-  float: left;
-  margin: 0 1% 0 0;
-}
-.domestic .solutionbox a
-{
-  text-decoration: none;
-  color: #aaa;
-  padding: 0 4px;
-  font-size: 12px;
-} */
 .domestic .solutionbox h5
 {
   font-size: 18px;
@@ -448,13 +486,6 @@ header .tophead .rightgroup
   font-size: 13px;
   color: #fff;
 }
-/* .domestic .solutionbox a
-{
-  text-decoration: none;
-  color: #aaa;
-  padding: 0 4px;
-  font-size: 12px;
-} */
 /*--Domestic Section End---*/
 
 /*--Client Section Start---*/
@@ -472,12 +503,6 @@ header .tophead .rightgroup
   margin-left: 50px;
   margin-right: 10px;
 }
-.client .title-section h5
-{
-  /* font-size: 18px; */
-  /* max-width: 80%; */
-  /* margin: 15px auto 20px; */
-}
 .client .title-section h3
 {
   text-align: left;
@@ -492,7 +517,6 @@ header .tophead .rightgroup
 .client .list-content a
 {
   color: #b00000;
-  /* text-decoration: none; */
 }
 .client .list-content p
 {
@@ -504,7 +528,6 @@ header .tophead .rightgroup
   font-size: 22px;
 }
 /*--Client Section End---*/
-
 /*--World Section Start---*/
 .getbtn:hover
 {
@@ -525,7 +548,6 @@ header .tophead .rightgroup
   text-shadow: -1px 0px 5px #ffffff;
 }
 /*--World Section End---*/
-
 /*--Footer Section Start---*/
 .quote-btn
 {
@@ -554,7 +576,6 @@ footer a:hover
   text-decoration: underline;
 }
 /*--Footer Section End---*/
-
 /*--Footer2 Section Start---*/
 .footer2
 {
@@ -567,6 +588,142 @@ footer a:hover
   color: #878191;
 }
 /*--Footer2 Section End---*/
+/*------------------------------------Our Network / Branches Section Start---------------------------------------------*/
+/*--Banner Section Start---*/
+.banner img
+{
+  width: 1263px;
+  height: 300px;
+  position: relative;
+}
+.overlay
+{
+  width: 90%;
+  height: 7%;
+  position: absolute;
+  top: 200;
+  left: 0;
+  z-index:1;
+  margin-top: -40px;
+  background: white;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.banner ul
+{
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  float: right;
+  padding: 0 70px;
+  top: 360px;
+  font-size: 12px;
+  color:#b00000;
+}
+.banner ul li a
+{
+  color: #b00000;;
+}
+.banner ul span
+{
+  color: #666;
+  text-shadow: none;
+  font-size: 8px;
+  margin-top: 3px;
+}
+/*--Banner Section End---*/
+/*--Benefit Section Start---*/
+.benefit h1
+{
+  color:#b00000;
+}
+/*--Benefit Section End---*/
+
+/*--Network Section Start---*/
+#network h5
+{
+  color: #b00000;
+}
+.countrylist ul li a
+{
+  color: #292b2c;
+}
+.countrylist ul li a:hover
+{
+  color: #b00000;
+}
+/*--Network Section End---*/
+/*------------------------------------Our Network / Branches Section End-----------------------------*/
+/*------------------------------------News Section Start---------------------------------------------*/
+.imgcard .card
+{
+  box-shadow: 1px 1px 8px 1px rgba(51, 51, 51, 0.25);
+}
+.imgcard .card-title a
+{
+  color: #b00000;
+}
+.imgcard .card-title a:hover
+{
+  color: #34313a;;
+}
+.imgcard .card p
+{
+  font-size: 12px;
+  text-align: justify;
+}
+.imgcard .card .post-date
+{
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: auto;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 22px 15px 20px 14px;
+}
+.imgcard .card .post-date span.day
+{
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+.imgcard .card .post-date span.month
+{
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  color: #b00000;
+}
+/*------------------------------------News Section End---------------------------------------------*/
+/*------------------------------------Contact / General Enquiries Section Start---------------------------------------------*/
+.detail .detailbox
+{
+  border: 1px solid #e6e6e6;
+  background-color: #f2f2f2;
+  border-radius: 2.5px;
+}
+.detail #receive-email
+{
+  margin: 5px 10px 0px 0px;
+}
+.detail .sendbtn
+{
+  background: #b00000;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 7px 45px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 10px 0 50px 0;
+}
+
+/*------------------------------------Contact / General Enquiries Section End---------------------------------------------*/
+
 
 /*--Media Query Section Start---*/
 @media only screen and (max-width: 1023px) {
