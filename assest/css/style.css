@@ -592,8 +592,8 @@ footer a:hover
 /*--Banner Section Start---*/
 .banner img
 {
-  width: 1263px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 .overlay
